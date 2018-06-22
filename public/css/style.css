@@ -1,0 +1,30 @@
+@media (min-width: 1200px){
+  .container {
+      width: 960px;
+      max-width: 100%;
+  }
+}
+h1{
+  font-size: 18px;
+}
+nav.navbar{
+  padding: 2px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+    margin-bottom: 18px;
+}
+#main{
+  padding-top: 30px;
+}
+#content .post{
+    margin-bottom: 10px;
+}
+a{
+    color:#333;
+}
+#content .post h2{
+  font-size: 16px;
+}
