@@ -16,6 +16,7 @@ Easy i18n localization for Laravel, an useful tool to combine with Laravel local
 - <a href="#usage">Usage</a>
     - <a href="#middleware">Middleware</a>
 - <a href="#helpers">Helpers</a>
+    - <a href="#route-model-binding">Route Model Binding</a>
 - <a href="#translated-routes">Translated Routes</a>
 - <a href="#config">Config</a>
     - <a href="#config-files">Config files</a>
@@ -33,7 +34,7 @@ Easy i18n localization for Laravel, an useful tool to combine with Laravel local
  4.2.x        | 0.15.x
  5.0.x/5.1.x  | 1.0.x
  5.2.x-5.4.x (PHP 7 not required)  | 1.2.x
- 5.2.x-5.5.x (PHP 7 required) | 1.3.x
+ 5.2.x-5.6.x (PHP 7 required) | 1.3.x
 
 ## Installation
 
@@ -193,6 +194,11 @@ public function getLocalizedURL($locale = null, $url = null, $attributes = array
 ```
 
 It returns a URL localized to the desired locale.
+
+##### Route Model Binding
+
+Note that [route model binding]([https://laravel.com/docs/master/routing#route-model-binding]) is taken into account when generating the localized route.
+
 
 ### Get Clean routes
 
@@ -385,6 +391,8 @@ If you're supporting multiple locales in your project you will probably want to 
 </ul>
 ```
 Here default language will be forced in getLocalizedURL() to be present in the URL even `hideDefaultLocaleInURL = true`.
+
+Note that <a href="#route-model-binding">Route Model Binding</a> is supported.
 
 ## Translated Routes
 

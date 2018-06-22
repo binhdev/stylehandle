@@ -8,8 +8,6 @@ use App\Post;
 
 class HomeController extends Controller
 {
-    private $site_name;
-    private $folder_name;
 
     /**
      * Create a new controller instance.
@@ -17,8 +15,6 @@ class HomeController extends Controller
      * @return void
      */
     public function __construct(){
-        $this->site_name=str_replace("www.","",str_after(App::make('url')->to('/'),'//'));
-        $this->folder_name = str_replace('.', '_',   $this->site_name);
     }
 
     public function index(){
